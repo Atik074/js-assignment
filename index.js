@@ -76,7 +76,10 @@ function gemsToDiamond(firstFriendsGem,secondFriendsGem,thirdFriendsGem){
           let restDiamond = totallDiamond - 2000;
          return restDiamond; }
   
-      else { return 'You should  take a number parameter'} 
+      else if(totallDiamond < (1000*2)) { return totallDiamond;}
+      else{
+        return 'please input a valid numebr'
+      } 
   }
 
   
